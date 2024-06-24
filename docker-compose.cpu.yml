@@ -1,0 +1,35 @@
+services:
+  rabbitmq:
+    image: "rabbitmq:3.13-management"
+    build:
+      context: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  worker:
+    build:
+      context: worker
+      dockerfile: Dockerfile.cpu.worker
+    volumes:
+      - ./worker:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  api:
+    build:
+      context: api
+      dockerfile: Dockerfile.api
+    volumes:
+      - ./api:/app
+    ports:
+      - 5002:5002
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - ./nginx:/app
+    ports:
+      - 1337:80
+    depends_on:
+      - api
