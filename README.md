@@ -15,6 +15,13 @@ Starting rabbitmq-job-worker_rabbitmq_1 ... done
 Starting rabbitmq-job-worker_server_1 ... done
 ```
 
+For custom file namess, use one of the following commands:
+
+```bash
+% docker-compose -f docker-compose.cpu.yml up -d # CPU
+% docker-compose -f docker-compose.cuda.yml up -d # GPU
+```
+
 ## Run jobs
 
 To see all of this in action, just hit the /add-job/hey or /add-job/hello end-point on your localhost and you will see the messages flowing through.

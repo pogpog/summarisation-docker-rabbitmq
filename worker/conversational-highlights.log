@@ -1,0 +1,187 @@
+2024-06-05 10:39:59,581 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 78, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 217, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 10:42:24,181 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 78, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 217, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 10:44:29,244 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 78, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 217, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 10:54:50,978 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 78, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 217, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 11:32:52,488 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 78, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 217, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 11:39:19,034 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 78, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 217, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 13:56:46,979 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 50, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 79, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 218, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 13:59:30,621 : ERROR : <class 'OSError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 50, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 79, in get_summary
+    response["highlight_points"] = make_sentences(response["summary"])
+  File "/app/run.py", line 218, in make_sentences
+    nlp = spacy.load("en_core_web_sm")
+  File "/usr/local/lib/python3.10/site-packages/spacy/__init__.py", line 51, in load
+    return util.load_model(
+  File "/usr/local/lib/python3.10/site-packages/spacy/util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+2024-06-05 15:33:32,853 : ERROR : <class 'FileNotFoundError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 50, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 76, in get_summary
+    response = make_summary(text=text, min_length=100, max_length=200)
+  File "/app/run.py", line 111, in make_summary
+    tokenizer = MODEL_OBJECT.get_tokenizer()
+  File "/app/model_standard.py", line 39, in get_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+  File "/usr/local/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 899, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2110, in from_pretrained
+    return cls._from_pretrained(
+  File "/usr/local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2273, in _from_pretrained
+    with open(special_tokens_map_file, encoding="utf-8") as special_tokens_map_handle:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/huggingface/hub/models--philschmid--bart-large-cnn-samsum/snapshots/e49b3d60d923f12db22bdd363356f1a4c68532ad/special_tokens_map.json'
+2024-06-06 12:23:36,542 : ERROR : <class 'RuntimeError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 77, in get_summary
+    response = make_summary(text=text, min_length=100, max_length=200)
+  File "/app/run.py", line 111, in make_summary
+    llm: Pipeline = make_llm()
+  File "/app/run.py", line 247, in make_llm
+    llm = MODEL_OBJECT.generate_model(MODEL_NAME_OR_PATH, device=DEVICE)
+  File "/app/model_standard.py", line 20, in generate_model
+    llm = pipeline("summarization", model=model_name_or_path, device=device)
+  File "/usr/local/lib/python3.10/site-packages/transformers/pipelines/__init__.py", line 1108, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/transformers/pipelines/text2text_generation.py", line 67, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/transformers/pipelines/base.py", line 883, in __init__
+    self.model.to(self.device)
+  File "/usr/local/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2724, in to
+    return super().to(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1173, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 804, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1159, in convert
+    return t.to(
+  File "/usr/local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+    raise RuntimeError(
+RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-06-06 17:11:52,590 : ERROR : <class 'RuntimeError'>
+Traceback (most recent call last):
+  File "/app/run.py", line 49, in run
+    summary = get_summary(text)
+  File "/app/run.py", line 77, in get_summary
+    response = make_summary(text=text, min_length=100, max_length=200)
+  File "/app/run.py", line 111, in make_summary
+    llm: Pipeline = make_llm()
+  File "/app/run.py", line 247, in make_llm
+    llm = MODEL_OBJECT.generate_model(MODEL_NAME_OR_PATH, device=DEVICE)
+  File "/app/model_standard.py", line 20, in generate_model
+    llm = pipeline("summarization", model=model_name_or_path, device=device)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/pipelines/__init__.py", line 1108, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/pipelines/text2text_generation.py", line 67, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/pipelines/base.py", line 883, in __init__
+    self.model.to(self.device)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 2724, in to
+    return super().to(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1173, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 779, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 804, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1159, in convert
+    return t.to(
+  File "/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+    raise RuntimeError(
+RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method

@@ -1,4 +1,5 @@
 import json
+import logging
 import math
 import os
 import re
@@ -8,12 +9,14 @@ from pathlib import Path
 
 import spacy
 import torch
+import utils
 from dotenv import load_dotenv
 from model_standard import ModelStandard
 from transformers import AutoTokenizer, BartTokenizerFast, Pipeline, pipeline
-from utils import log, print_debug
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+# DEVICE = "cuda"
+# DEVICE = "cpu"
 
 MODEL_NAME = "philschmid/bart-large-cnn-samsum"
 MODEL_OBJECT = ModelStandard(MODEL_NAME)
@@ -34,7 +37,7 @@ def run(text: str) -> str:
         Exception: If an error occurs while generating the summary.
     """
 
-    print_debug(f"DEVICE: {DEVICE}")
+    print(f"DEVICE: {DEVICE}")
 
     min_length = 40
     if len(text) < min_length:
@@ -49,8 +52,8 @@ def run(text: str) -> str:
         return summary
     except:
         trace_back = sys.exc_info()[0]
-        log(trace_back, "error")
-        print_debug(trace_back)
+        utils.log(trace_back, "error")
+        print(trace_back)
         return json.dumps(
             {
                 "message": "An error occurred while generating a summary.",
@@ -82,7 +85,7 @@ def get_summary(text: str) -> str:
     execution_time = calculate_execution_time(start_time)
     response["time_taken"] = execution_time
 
-    print_debug(f"Time taken: {execution_time}")
+    print(f"Time taken: {execution_time}")
     return json.dumps(response)
 
 
@@ -161,7 +164,7 @@ def iterate_summary(
 
     # If we're here, the text was too long for the model to handle, so we split it.
     n = math.ceil(token_count / max_tokens)
-    print_debug(f"(factor) n = {n}")
+    print(f"(factor) n = {n}")
     sentences = make_messages(text)
     text_all = ""
     text_chunk = ""

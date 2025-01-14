@@ -24,12 +24,3 @@ services:
       - ./api:/app
     ports:
       - 5002:5002
-
-  nginx:
-    build: ./nginx
-    volumes:
-      - ./nginx:/app
-    ports:
-      - 1337:80
-    depends_on:
-      - api

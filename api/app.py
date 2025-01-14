@@ -3,12 +3,11 @@ import re
 import uuid
 from typing import Dict
 
-from utils import log, print_debug
 import pika
 from flask import Flask, request
 
 app = Flask(__name__)
-queue: dict = {}
+queue: Dict[str, str] = {}
 
 
 @app.route("/")
@@ -22,7 +21,7 @@ def add():
 
     request.get_data()
     cmd = get_input()
-    print_debug(f" [x] Requesting {cmd}")
+    print(f" [x] Requesting {cmd}")
     worker = WorkerClient()
     response = worker.call(cmd)
 
@@ -81,31 +80,10 @@ class WorkerClient:
         self.corr_id = None
 
     def on_response(self, ch, method, props, body):
-        """
-        Callback function that is called when a response is received from the RabbitMQ queue.
-
-        Args:
-            ch (pika.channel.Channel): The RabbitMQ channel.
-            method (pika.spec.Basic.Deliver): The delivery information.
-            props (pika.spec.BasicProperties): The message properties.
-            body (bytes): The response message body.
-
-        Returns:
-            None
-        """
         if self.corr_id == props.correlation_id:
             self.response = body
 
-    def call(self, cmd: str):
-        """
-        Call a RabbitMQ task queue and wait for the response.
-
-        Args:
-            cmd (str): The command to send to the task queue.
-
-        Returns:
-            str: The response from the task queue.
-        """
+    def call(self, cmd):
         self.response = None
         self.corr_id = str(uuid.uuid4())
         queue[self.corr_id] = None
@@ -121,7 +99,7 @@ class WorkerClient:
         while self.response is None:
             self.connection.process_data_events(time_limit=None)
         queue[self.corr_id] = self.response
-        print_debug(self.response)
+        print(self.response)
         self.connection.close()
         return str(self.response)
 
